@@ -1,0 +1,15 @@
+# 忽略包含真实账号密码的本地配置
+config/iptv.conf
+*.conf.local
+
+# 忽略抓包与日志文件（防 MAC 与认证信息泄露）
+*.pcap
+*.pcapng
+*.log
+
+# 忽略编译产物与 Python 虚拟环境
+iptv_bridge
+*.o
+.venv/
+__pycache__/
+.DS_Store
